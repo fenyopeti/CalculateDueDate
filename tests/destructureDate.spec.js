@@ -1,4 +1,4 @@
-const { destructureDate } = require('./destructureDate');
+const { destructureDate } = require('../src/destructureDate');
 
 describe('destructureDate', () => {
   const expectations = [
