@@ -37,4 +37,15 @@ describe('CalculateDueDate', () => {
 
     expect(error.message).toBe('Invalid turnaroundTime input')
   })
+
+  it('CalculateDueDate should throw invalid turnaround time error', () => {
+    let error
+    try {
+      CalculateDueDate(new Date('2020. 07. 07. 15:05'), -4)
+    } catch (e) {
+      error = e
+    }
+
+    expect(error.message).toBe('Invalid turnaroundTime input')
+  })
 })

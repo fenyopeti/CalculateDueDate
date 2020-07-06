@@ -49,7 +49,7 @@ const calculateTurnaroundDate = ({
       month: submitMonth,
       date: submitDate,
       hours: submitHours + hoursToAdd,
-      minutes: minutes
+      minutes
     }
   }
 
@@ -60,10 +60,9 @@ const calculateTurnaroundDate = ({
     month: submitMonth,
     date: submitDate + daysToAdd,
     hours,
-    minutes: minutes
+    minutes
   }
 }
-
 
 module.exports = {
   calculateTurnaroundDate
