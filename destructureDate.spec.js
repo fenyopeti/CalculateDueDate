@@ -13,7 +13,7 @@ describe('destructureDate', () => {
     ['not a date', undefined]
   ]
 
-  test.each(expectations)('destructureDate(%s) should return %s', (submitDate, result) => {
-    expect(destructureDate(submitDate)).toEqual(result)
+  test.each(expectations)('destructureDate(%s) should return %s', (date, result) => {
+    expect(destructureDate(date)).toEqual(result)
   })
 })
